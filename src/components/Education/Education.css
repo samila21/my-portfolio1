@@ -1,0 +1,64 @@
+:root {
+  --purple: #220156;
+}
+
+/* Education Section */
+.education {
+  padding: 80px 20px;
+  background: #f8f7ff;
+}
+
+.education__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.education__grid {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Education Card */
+.education__card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 6px solid var(--purple);
+  width: 320px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s, background 0.25s;
+  text-align: left;
+}
+
+.education__card:hover {
+  transform: translateY(-6px);
+  background: #fcf7ff;
+}
+
+/* Year */
+.edu__year {
+  font-weight: 700;
+  color: #666;
+  font-size: 13px;
+}
+
+/* Headings */
+.education__card h3 {
+  margin: 6px 0;
+  color: #222;
+}
+
+.education__card h4 {
+  color: var(--purple);
+  margin: 4px 0;
+  font-style: italic;
+}
+
+/* Description */
+.education__card p {
+  color: #555;
+  font-size: 14px;
+}

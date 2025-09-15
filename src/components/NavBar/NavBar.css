@@ -1,0 +1,115 @@
+:root {
+  --purple: #1e024c;
+}
+
+/* Header & Nav */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header--scrolled {
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Brand */
+.brand {
+  font-weight: 700;
+  font-size: 26px;
+  color: rgb(8, 0, 74);
+}
+
+/* Nav List */
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.nav__list li a {
+  text-decoration: none;
+  color: var(--purple);
+  font-size: 22px;
+  font-weight: 500;
+  transition: color 0.25s;
+  transition: transform 0.3s ease;
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.nav__list li a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  background: #1e024c;
+  transition: width 0.3s ease;
+  height: 2.5px;
+}
+
+.nav__list li a:hover {
+  color: rgb(0, 54, 248);
+
+}
+.nav__list li a:hover::after,
+.nav__list li a:active::after{
+  width: 100%;
+}
+
+/* Toggle Button (Mobile) */
+.nav__toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: rgb(1, 0, 82);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile / Tablet */
+@media (max-width: 900px) {
+  .nav__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.35s ease;
+    text-align: center;
+   
+  }
+
+  .nav__list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+     
+  }
+
+  .nav__list--open {
+    max-height: 500px; /* enough to show all links */
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+}

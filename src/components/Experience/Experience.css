@@ -1,0 +1,130 @@
+:root {
+  --purple: #1b01e3;
+  --blue: #01015a;
+}
+
+/* Section */
+.experience {
+  padding: 80px 20px;
+  background: #f8f7ff;
+}
+
+.exp__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-title{
+    color: #01015a;
+}
+/* Tabs */
+.exp__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.exp__tabs button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 2px solid var(--purple);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+/* Active states */
+.exp__tabs button.active {
+  background: var(--purple);
+  color: #fff;
+}
+
+/* Special active style for internship */
+.exp__tabs button.active:nth-child(2) {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+
+/* Grid */
+.exp__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+/* Card base */
+.exp__card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(0,0,0,.06);
+  transition: transform .25s;
+}
+
+.exp__card:hover {
+  transform: translateY(-8px);
+}
+
+/* Internship style */
+.internship-style {
+  background: transparent;
+  border: 2px solid var(--blue);
+  box-shadow: none;
+}
+
+/* Icon */
+.exp__icon {
+  font-size: 28px;
+}
+
+/* Hospital */
+.exp__hospital {
+  margin: 8px 0 4px;
+  color: var(--purple);
+}
+
+.internship-style .exp__hospital {
+  color: var(--blue);
+}
+
+/* Meta info */
+.exp__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.exp__desc {
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+/* Button */
+.exp__card .btn {
+  background: var(--purple);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.exp__card .btn:hover {
+  background: #4b1ba8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .exp__grid {
+    grid-template-columns: 1fr;
+  }
+}

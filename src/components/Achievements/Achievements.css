@@ -1,0 +1,134 @@
+:root {
+  --purple: #230258;
+}
+
+/* Achievements Section */
+.achievements {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.ach__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Wrapper for content */
+.ach__wrap {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Left side image */
+.ach__left img {
+  width: 420px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+}
+
+/* Right side content */
+.ach__right {
+  max-width: 480px;
+  text-align: left;
+}
+
+.ach__title {
+  color: var(--purple);
+  margin: 0 0 6px 0;
+  font-size: 22px;
+}
+
+.ach__year {
+  display: inline-block;
+  background: #f3f0ff;
+  color: var(--purple);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ach__desc {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Slider controls */
+.ach__controls {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ach__controls button {
+  background: var(--purple);
+  color: #fff;
+  border: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.ach__controls button:hover {
+  background: #5a20b5;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   📱 Responsive Media Queries
+   =============================== */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .ach__wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ach__left img {
+    width: 360px;
+    height: auto;
+  }
+
+  .ach__right {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .ach__left img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .ach__title {
+    font-size: 20px;
+  }
+
+  .ach__year {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .ach__desc {
+    font-size: 15px;
+  }
+
+  .ach__controls button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}

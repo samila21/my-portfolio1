@@ -1,0 +1,159 @@
+
+
+/* Home Section */
+.home {
+  padding: 110px 20px 60px;
+  background: #f8f7ff;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.home__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home__left {
+  flex: 0 0 360px;
+  text-align: center;
+}
+
+.home__photo {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+transition: transform 0.3s ease;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+.home__photo:hover{
+ transform: scale(1.05);
+ box-shadow: 0 4px 15px rgb(0,0,0,0.3);
+}
+
+.home__right {
+  flex: 1;
+  min-width: 260px;
+}
+
+.home__role {
+  color: rgb(1, 1, 89);
+  margin: 0;
+  font-weight: 700;
+}
+
+.home__name {
+  font-size: 32px;
+  margin: 6px 0;
+}
+
+.home__name span {
+  color: var(--purple);
+}
+
+.home__desc {
+  color: gray;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.home__actions {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.btn {
+  background: #210151;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transition 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+ box-shadow: 0 4px 15px rgb(0,0,0,0.3);
+}
+
+.home__socials a {
+  margin-left: 10px;
+  font-size: 26px;
+  color: #210151;
+  transition: color 0.3s ease;
+}
+
+.home__socials a:hover {
+  color: #641bf6;
+}
+
+.home__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 12px; /* space below actions */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  justify-content: center; /* center horizontally */
+}
+
+.btn {
+  background: #210151;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Social icons inline with button */
+.home__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.home__socials a {
+  font-size: 26px;
+  color: #210151;
+  transition: color 0.3s ease;
+}
+
+.home__socials a:hover {
+  color: #641bf6;
+}
+
+/* Responsive: stack actions vertically if too narrow */
+@media (max-width: 480px) {
+  .home__actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home__left {
+    order: 1;
+  }
+
+  .home__right {
+    order: 2;
+  }
+}
