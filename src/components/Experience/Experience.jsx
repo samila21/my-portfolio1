@@ -19,7 +19,16 @@ export default function Experience() {
       date: "21/05/2024 - 05/06/2024",
       desc: "Orthopedic posting (15 Days)",
       certLink: "https://drive.google.com/file/d/1xHZRs0RGMiFfSI9a8fp-AhfTu7SdtAd7/view?usp=sharing"
-    }
+    },
+    {
+      id: 2,
+      hospital: "Shree Siva Hospital",
+      loc: "Coimbatore",
+      date: "Nov 2023 - Dec 2023",
+      desc: "Orthopedic posting (15 Days)",
+      certLink: "https://drive.google.com/file/d/1xHZRs0RGMiFfSI9a8fp-AhfTu7SdtAd7/view?usp=sharing"
+    },
+
   ];
 
   const internships = [
