@@ -17,8 +17,8 @@ export default function Experience() {
       hospital: "Thiraviam Orthopaedic Hospital",
       loc: "Nagercoil",
       date: "21/05/2024 - 05/06/2024",
-      desc: "Orthopedic posting (15 Days)",
-      certLink: "https://drive.google.com/file/d/1xHZRs0RGMiFfSI9a8fp-AhfTu7SdtAd7/view?usp=sharing"
+      desc: " IASTM , dry needling and various types of techniques towards the recovery of daily illness of the patient",
+      certLink: ""
     },
     {
       id: 2,
