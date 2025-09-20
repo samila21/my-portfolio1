@@ -21,12 +21,12 @@ export default function Experience() {
       certLink: ""
     },
     {
-      id: 2,
+      id: 3,
       hospital: "Shree Siva Hospital",
       loc: "Coimbatore",
       date: "Nov 2023 - Dec 2023",
-      desc: "Orthopedic posting (15 Days)",
-      certLink: "https://drive.google.com/file/d/1xHZRs0RGMiFfSI9a8fp-AhfTu7SdtAd7/view?usp=sharing"
+      desc: " IASTM , dry needling and various types of techniques towards the recovery of daily illness of the patient",
+      certLink: ""
     },
 
   ];
