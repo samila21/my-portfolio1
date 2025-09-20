@@ -9,24 +9,25 @@ export default function Experience() {
       hospital: "Kinergy Physio Rehab Redefind",
       loc: "Coimbatore",
       date: "08/06/2023 - 07/08/2023",
-      desc: "(45 Days)",
+      desc:" Skills which I learned are myofascial release and trigger point release , IASTM , dry needling and various types of techniques towards the recovery of daily illness of the patient",
       certLink: "https://drive.google.com/file/d/1yOnbnR7CbDaZIpzaHAS9HUDpfvJT5jgT/view?usp=sharing"
     },
-    {
+
+      {
       id: 2,
-      hospital: "Thiraviam Orthopaedic Hospital",
-      loc: "Nagercoil",
-      date: "21/05/2024 - 05/06/2024",
-      desc: " IASTM , dry needling and various types of techniques towards the recovery of daily illness of the patient",
+      hospital: "Shree Siva Hospital",
+      loc: "Coimbatore",
+      date: "Nov 2023 - Dec 2023",
+      desc: " The neuro rehabilitation center. I utilised much knowledge about neurological condition",
       certLink: ""
     },
     {
       id: 3,
-      hospital: "Shree Siva Hospital",
-      loc: "Coimbatore",
-      date: "Nov 2023 - Dec 2023",
-      desc: " IASTM , dry needling and various types of techniques towards the recovery of daily illness of the patient",
-      certLink: ""
+      hospital: "Thiraviam Orthopaedic Hospital",
+      loc: "Nagercoil",
+      date: "21/05/2024 - 05/06/2024",
+      desc: " Lots of orthopaedic cases I gained skills to rehabilitation acl injury, multiple fractures, amputation, RTA cases rehabilitation and TKR rehabilitation. Those days I had a opportunity to travel with orthopaedic surgeons and gain more knowledge about clinical conditions too.",
+      certLink: "https://drive.google.com/file/d/1xHZRs0RGMiFfSI9a8fp-AhfTu7SdtAd7/view?usp=sharing"
     },
 
   ];
