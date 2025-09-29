@@ -1,5 +1,6 @@
 import React from "react";
-import { FaHandsHelping, FaHeartbeat, FaWalking, FaSyringe } from "react-icons/fa";
+import {FaFire, FaToiletPaper, FaWalking, FaSyringe,  FaBandAid } from "react-icons/fa";
+
 import { motion } from "framer-motion";  // 👈 Import motion
 import "./About.css";
 
@@ -48,10 +49,12 @@ export default function About() {
         {/* Skills with staggered animation */}
         <div className="skills__wrap">
           {[
-            { icon: <FaHandsHelping className="skill__icon" />, text: "Burn Therapy" },
-            { icon: <FaHeartbeat className="skill__icon" />, text: "Constipation & Coccydynia" },
+            { icon: <FaFire className="skill__icon" />, text: "Burn Therapy" },
+            { icon: <FaToiletPaper className="skill__icon" />, text: "Constipation & Coccydynia" },
             { icon: <FaWalking className="skill__icon" />, text: "Gait & Mobility Training" },
-            { icon: <FaSyringe className="skill__icon" />, text: "Dry Needling" }
+            { icon: <FaSyringe className="skill__icon" />, text: "Dry Needling" },
+            { icon: <FaBandAid className="skill__icon" />, text: "Kineo taping" },
+          
           ].map((skill, index) => (
             <motion.div
               className="skill"
